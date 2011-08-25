@@ -15,7 +15,7 @@
 		
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/inc/css/compressor.php" type="text/css" media="screen" />
+		<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-1.1.0.min.css">
 				
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		
