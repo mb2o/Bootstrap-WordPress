@@ -1,60 +1,22 @@
-/*
-
-	YOUR_THEME Style Sheet
-
-*/
-
-body{
-
-}
-
-strong, b{
-	font-weight: bold;
-}
-
-em, i{
-	font-style: italic;
-}
-
-/*
-
-	Images
-
-*/
-
-.alignleft{
-	float: left;
-}
-
-.alignright{
-	float: right;
-}
-
-img.alignleft{
-	float: left;
-	margin: 0 15px 15px 0;
-}
-
-img.alignright{
-	float: right;
-	margin: 0 0 15px 15px;
+div.container-fluid{
+	padding-top: 60px;
 }
 
 /*
 	
-	Slider
+	Comments
 
 */
 
-#slider {
-    position: relative;
-    width: 618px;
-    height: 246px;
+#commentform .span8{
+	margin-left: 0;
 }
 
-#slider img {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    display: none;
+form div.input.comment_textarea{
+	margin-left: 0;
+}
+
+textarea#comment{
+	width: 514px;
+	height: 110px;
 }
