@@ -6,6 +6,11 @@
 
 get_header(); ?>
 
+<?php 
+get_sidebar(); ?>
+
+<div class="content">
+	
 	<?php 
 	if (have_posts()) : ?>
 
@@ -39,9 +44,8 @@ get_header(); ?>
 
 	<?php 
 	endif; ?>
-
-<?php 
-get_sidebar(); ?>
+	
+</div> <!-- content -->
 
 <?php 
 get_footer(); ?>
