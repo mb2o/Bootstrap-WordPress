@@ -9,8 +9,10 @@
 add_action('admin_menu', 'bootstrap_create_menu');
 
 function bootstrap_create_menu() {
-	
-	add_theme_page ('Bootstrap Options', 'Bootstrap Options', 'administrator', __FILE__, 'bootstrap_settings');
+
+	//create new top-level menu
+	add_menu_page('Bootstrap', 'Bootstrap', 'administrator', __FILE__, 'bootstrap_settings', get_bloginfo('template_url') . '/img/twitter_icon.png');
+	add_submenu_page(__FILE__, 'Home Options', 'Home Options', 'administrator', 'bootstrap_home_settings', 'bootstrap_home_settings');
 
 	//call register settings function
 	add_action( 'admin_init', 'register_bootstrap_settings' );
@@ -29,7 +31,7 @@ function register_bootstrap_settings() {
 }
 
 function bootstrap_settings() { ?>
-
+	
 	<div class="wrap">
 	
 		<div id="icon-edit" class="icon32"></div><h2>Bootstrap Options</h2>
@@ -153,4 +155,6 @@ function bootstrap_settings() { ?>
 	</div> <!-- wrap -->
 
 <?php 
+
+function bootstrap_home_settings(){}
 } ?>

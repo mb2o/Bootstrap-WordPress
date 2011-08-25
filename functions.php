@@ -42,7 +42,7 @@ function envex_scripts(){
 	wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', false, '1.6.2');
 	wp_enqueue_script('jquery');
 	
-	wp_register_script('application', 'http://twitter.github.com/bootstrap/assets/js/application.js', false, '1.0');
+	wp_register_script('application', get_bloginfo('template_url') . '/inc/js/application.js', false, '1.0');
 	wp_enqueue_script('application');
 	
 	wp_register_script('main', get_bloginfo('template_url') . '/inc/js/main.js', false, '1.0', true);
